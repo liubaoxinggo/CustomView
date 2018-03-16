@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fhit.customview.custom.MyFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/op"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="op"/>
+    <com.fhit.customview.custom.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello World!" />
+    <com.fhit.customview.custom.CounterView
+        android:id="@+id/counter_view"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"/>
+    <com.fhit.customview.custom.CounterView
+        android:id="@+id/counter_view_gc"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"/>
+</com.fhit.customview.custom.MyFrameLayout>
