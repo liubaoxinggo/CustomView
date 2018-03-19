@@ -2,9 +2,9 @@ package com.fhit.customview.custom;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.widget.TextView;
 
 import com.fhit.customview.util.LogUtils;
 
@@ -13,7 +13,7 @@ import com.fhit.customview.util.LogUtils;
  * Email:liubaoxinggo@foxmail.com<br/>
  */
 
-public class MyTextView extends TextView {
+public class MyTextView extends AppCompatTextView {
     public MyTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

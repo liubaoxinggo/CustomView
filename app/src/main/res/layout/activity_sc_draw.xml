@@ -4,9 +4,8 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical">
-    <com.fhit.customview.custom.BaseFocusView
+    <com.fhit.customview.custom.DragScaleView
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:background="@color/colorAccent"
         android:layout_centerInParent="true"/>
 </RelativeLayout>
