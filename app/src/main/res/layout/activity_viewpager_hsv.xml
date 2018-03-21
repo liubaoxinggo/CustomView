@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.fhit.customview.custom.MHorizontalScrollView
+        android:id="@+id/m_horizontal_scroll_view"
+        android:scrollbarSize="2dp"
+        android:fadeScrollbars="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:background="#bbbbbb"
+            android:textColor="#ffffff"
+            android:text="@string/viewpager_horizontal_view"
+            android:gravity="center_vertical"/>
+    </com.fhit.customview.custom.MHorizontalScrollView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/m_view_pager"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</LinearLayout>

@@ -1,10 +1,8 @@
 package com.fhit.customview.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.View;
 
 import com.fhit.customview.R;
@@ -31,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ScDrawActivity.class));
+            }
+        });
+        findViewById(R.id.MHorizontalScrollView_MViewPager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ViewpagerHSVActivity.class));
             }
         });
     }

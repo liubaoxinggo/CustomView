@@ -42,25 +42,30 @@ public class DragScaleView extends BaseFocusView implements View.OnTouchListener
     private int boundary = 40;
     protected Paint paint = new Paint();
 
-    private void initScreenW_H(){
+    private void init(){
         screenWith = getResources().getDisplayMetrics().widthPixels;
         screenHeigh = getResources().getDisplayMetrics().heightPixels - 40;
-    }
 
-    public DragScaleView(Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
         this.setClickable(true);//必须设置为true，否则无效
         setOnTouchListener(this);
-        initScreenW_H();
         setBoundarySize(boundary);
+        paint.setColor(Color.RED);
+        paint.setStrokeWidth(4.0f);
+        paint.setStyle(Paint.Style.STROKE);
+    }
+
+    public DragScaleView(Context context) {
+        super(context);
+        init();
+    }
+    public DragScaleView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        init();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        paint.setColor(Color.RED);
-        paint.setStrokeWidth(4.0f);
-        paint.setStyle(Paint.Style.STROKE);
         //继承了 BaseFocusView ，就不需要绘制边界线了
         //canvas.drawRect(offset,offset,getWidth() - offset,getHeight() - offset,paint);
     }
@@ -151,8 +156,7 @@ public class DragScaleView extends BaseFocusView implements View.OnTouchListener
                         break;
                 }
                 v.layout(oriLeft,oriTop,oriRight,oriBottom);
-                if(dragDirection != CENTER){
-                }
+
                 lastX = (int)event.getRawX();
                 lastY = (int)event.getRawY();
                 break;

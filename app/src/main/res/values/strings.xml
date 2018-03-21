@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CustomView</string>
+    <string name="viewpager_horizontal_view">ViewPager里嵌套HorizontalView,当HorizontalView滑动到最右边时，再切换ViewPager</string>
+    <string name="get_scroll_x_cn">返回当前滑动View左边界的位置，其实获取的值就是这块幕布在窗口左边界时的x坐标，而幕布上面哪个点是原点（0，0）呢？就是初始化时内容显示的位置</string>
+    <string name="get_scroll_x">Return the scrolled left position of this view. This is the left edge of the displayed part of your view. You do not need to draw any pixels farther left, since those are outside of the frame of your view on screen.Returns int The left edge of the displayed part of your view, in pixels.</string>
 </resources>

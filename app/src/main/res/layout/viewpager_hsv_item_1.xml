@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fhit.customview.custom.MHorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m_horizontal_scroll_view"
+    android:scrollbarSize="2dp"
+    android:fadeScrollbars="false"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:padding="8dp"
+        android:background="#00ff00"
+        android:textColor="#666666"
+        android:text="@string/get_scroll_x"
+        android:gravity="center_vertical"/>
+</com.fhit.customview.custom.MHorizontalScrollView>

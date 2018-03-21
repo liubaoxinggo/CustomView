@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".activity.CombinationViewActivity" />
         <activity android:name=".activity.DrawActivity" />
-        <activity android:name=".activity.ScDrawActivity"></activity>
+        <activity android:name=".activity.ScDrawActivity" />
+        <activity android:name=".activity.ViewpagerHSVActivity"></activity>
     </application>
 
 </manifest>
