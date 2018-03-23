@@ -74,6 +74,8 @@ public class DragScaleView extends BaseFocusView implements View.OnTouchListener
     public boolean onTouch(View v, MotionEvent event) {
         int action  = event.getAction();
         if(action == MotionEvent.ACTION_DOWN){
+            getParent().requestDisallowInterceptTouchEvent(true);
+            getParent().getParent().requestDisallowInterceptTouchEvent(true);
             oriLeft = v.getLeft();
             oriBottom = v.getBottom();
             oriRight = v.getRight();
@@ -81,6 +83,9 @@ public class DragScaleView extends BaseFocusView implements View.OnTouchListener
             lastX = (int)event.getRawX();
             lastY = (int)event.getRawY();
             dragDirection = getDirection(v,(int)event.getX(),(int)event.getY());
+        }else if(action == MotionEvent.ACTION_UP){
+            getParent().requestDisallowInterceptTouchEvent(false);
+            getParent().getParent().requestDisallowInterceptTouchEvent(false);
         }
         delDrag(v,event,action);
         invalidate();

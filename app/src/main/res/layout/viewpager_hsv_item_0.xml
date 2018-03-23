@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fhit.customview.custom.MHorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m_horizontal_scroll_view"
+    android:scrollbarSize="2dp"
+    android:fadeScrollbars="false"
+    android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="110dp"
+        android:background="@color/colorPrimary">
+        <com.fhit.customview.custom.DragScaleView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+</com.fhit.customview.custom.MHorizontalScrollView>

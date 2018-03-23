@@ -71,7 +71,7 @@ public class BaseFocusView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-//        width = getWidth();//不能在这里设置，这里是固定大小
+//        width = getWidth();//不能在这里这样设置，这里是固定大小
 //        height = getHeight();
     }
 

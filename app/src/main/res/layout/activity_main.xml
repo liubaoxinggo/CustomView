@@ -28,4 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="MHorizontalScrollView MViewPager"/>
+    <Button
+        android:id="@+id/lottie_animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lottie动画"/>
 </LinearLayout>
